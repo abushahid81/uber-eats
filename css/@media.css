@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    .login-sign a{
+        padding:  120px  120px;
+    }
+    .button-p{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    
+    .pages p a{
+        font-size: 10px;
+    }
+   
+    .pages {
+        margin-top: -40px;
+        margin-right: 10px;
+    }
+    .card-cng {
+        margin-left: 26px;
+    }
+    .sub-zero{
+        font-size: 10px;
+    }
+    
+}
+@media only screen and (min-width: 430px) {
+   
+    .button-p{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .pages {
+        margin-top: -60px;
+        margin-right: 10px;
+    }
+    .pages p a{
+        font-size: 10px;
+    }
+    .card-cng {
+        margin-left: 55px;
+    }
+   
+   
+}

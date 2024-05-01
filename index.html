@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber-Eats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/@media.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        
+          <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="login-sign">
+                <button type="button" class="btn btn-dark sign-up"><a href="#" class="link-s">Sign up</a></button>
+                <br/>
+                <button type="button" class="btn btn-light log-in mt-2"><a href="#" class="link-l">Login in</a></button>
+              </div>
+              <p><a href="#" class="link-underline-light text-dark">Create a business account</a></p>
+              <p><a href="#" class="link-underline-light text-dark">Add your restaurant</a></p>
+              <p><a href="#" class="link-underline-light text-dark">Sign up to deliver</a></p>
+            </div>
+            <div class="create">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/31ee382bd0e6ed84.svg" width="50" height="50" alt=""/>
+                <h4 class="text-nch">There's more to love in the app.</h4>
+            </div>
+            <div class="phone">
+                <button type="button" class="btn btn-light iphone rounded-pill mt-2"><a href="#" class="link-l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple me-1 mb-1" viewBox="0 0 16 16">
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                  </svg>iPhone</a></button>
+                <button type="button" class="btn btn-light android rounded-pill mt-2 "><a href="#" class="link-l"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2 me-1 mb-1" viewBox="0 0 16 16">
+                    <path d="m10.213 1.471.691-1.26q.069-.124-.048-.192-.128-.057-.195.058l-.7 1.27A4.8 4.8 0 0 0 8.005.941q-1.032 0-1.956.404l-.7-1.27Q5.281-.037 5.154.02q-.117.069-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.7 3.7 0 0 0 3.5 5.02h9q0-1.125-.623-2.072a4.27 4.27 0 0 0-1.664-1.476ZM6.22 3.303a.37.37 0 0 1-.267.11.35.35 0 0 1-.263-.11.37.37 0 0 1-.107-.264.37.37 0 0 1 .107-.265.35.35 0 0 1 .263-.11q.155 0 .267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.35.35 0 0 1-.262.11.37.37 0 0 1-.268-.11.36.36 0 0 1-.112-.264q0-.154.112-.265a.37.37 0 0 1 .268-.11q.155 0 .262.11a.37.37 0 0 1 .107.265q0 .153-.107.264M3.5 11.77q0 .441.311.75.311.306.76.307h.758l.01 2.182q0 .414.292.703a.96.96 0 0 0 .7.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182q0 .414.292.703a.97.97 0 0 0 .71.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76q.436 0 .749-.308.31-.307.311-.75V5.365h-9zm10.495-6.587a.98.98 0 0 0-.702.278.9.9 0 0 0-.293.685v4.063q0 .406.293.69a.97.97 0 0 0 .702.284q.42 0 .712-.284a.92.92 0 0 0 .293-.69V6.146a.9.9 0 0 0-.293-.685 1 1 0 0 0-.712-.278m-12.702.283a1 1 0 0 1 .712-.283q.41 0 .702.283a.9.9 0 0 1 .293.68v4.063a.93.93 0 0 1-.288.69.97.97 0 0 1-.707.284 1 1 0 0 1-.712-.284.92.92 0 0 1-.293-.69V6.146q0-.396.293-.68"/>
+                  </svg>Android</a></button>
+              </div>
+          </div>
+        <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg"class="ms-1" alt="">
+
+        <button type="button" class="btn btn-dark rounded-pill button-p" id="liveToastBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+          </svg>Enter delivery adress</button>
+          <div class="pages">
+            <!-- <button type="button" class="btn btn-dark iphone rounded-pill mt-2"><a href="#" class="link-a ms-3 me-3">Sign up</a></button>
+            <button type="button" class="btn btn-light android rounded-pill mt-2 "><a href="#" class="link-b ms-3 me-3">Log in</a></button> -->
+            <p class="p-2 me-1"><a href="#" class="link-b border border-dark-subtle rounded-pill border-3">Log in</a></p>
+            <p class="p-2"><a href="#" class="link-a border border-dark-subtle rounded-pill border-3">Sign up</a></p>
+            </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            <h2 class="fw-bolder">Enter delivery address</h2>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <input class="form-control form-control-lg" type="text" placeholder="Search for an adderss" aria-label=".form-control-lg example">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/07/26/8f/07268fcf2743f668ee857ed5a8d6a3b9.jpg" class="d-block w-100" alt="...">
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+              <div class="card-cng">
+                <div class="card  mt-5" style="width: 18rem;">
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/88d55f7112efe55f.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>Feed your employees</h3>
+                      <p class="card-text"><a href="#" class="text-dark">Create a business account</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card-cng">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/711d51ca1b458931.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>Your restarunt, deliverd</h3>
+                        <p class="card-text"><a href="#" class="text-dark">Add your resturant</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card-cng">
+                <div class="card mt-5" style="width: 18rem;">
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/16522a701585873b.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>Diliver with Uber Eats</h3>
+                        <p class="card-text"><a href="#" class="text-dark">Sign up to deliver</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg mt-5">
+                <h3 class="mb-3 fs-1 fw-bolder">Cities near me</h3>
+                <img src="images/usa map.png" class="card-img-top" alt="...">
+         </div>
+      </div>
+      <div>
+        <div class="container-fluid">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-3  mb-3 sub-zero">
+                    
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Akron</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Albuquerque</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Bridgeport</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Concord</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Dayton</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">El Paso</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3  mb-3 sub-zero">
+                    
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Hartford</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Houston</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Indianapolis</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">McAllen</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Mesa</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Milwaukee</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-3  mb-3 sub-zero">
+                    
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Nashville</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">New Orleans</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Oklahoma City</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Omaha</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Orlando</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Palm Bay</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3  mb-3 sub-zero">
+                    
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Providence</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Queens</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">San Antonio</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Stony Brook</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Tucson</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">West Hollywood</a></li>
+                    </ul>
+                  </div>
+              </div>
+         </div>
+         <div class="container-fluid">
+             <footer class="py-0">
+               <h3 class="fs-1 fw-bolder">Countries with Uber Eats</h3>
+                <div class="row">
+                 <div class="col-3  mb-3 sub-zero">
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Australia</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Belgium</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Canada</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Chile</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Costa Rica</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Dominican Republic</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3  mb-3 sub-zero">
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">France</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Germany</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Guatemala</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Ireland</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Italy</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Japan</a></li>
+                    </ul>
+                </div>
+                  <div class="col-3  mb-3 sub-zero">
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Netherlands</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">New Zealand</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Panama</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Poland</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Portugal</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">South Africa</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3  mb-3 sub-zero">
+                    <ul class="nav flex-column ">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Sweden</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Switzerland</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">Taiwan (ROC)</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">United Kingdom</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link text-dark p-0">United States</a></li>
+                    </ul>
+                  </div>
+              </div>
+         </div>
+     </div>
+</section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script/Javacsript.js"></script>
+</body>
+</html>
