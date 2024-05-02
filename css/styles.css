@@ -58,6 +58,25 @@
 .uber-eats{
     margin-top: 150px;
 }
+.btn-data{
+    display: inline-flex;
+    margin-right: 5px;
+}
+.btn-prime{
+    margin-right: 48px;
+}
+.btn-01{
+    margin-right: 24px;
+    margin-bottom: -26px;
+}
+.btn-02{
+    margin-right: 26px;
+    margin-bottom: -25px;
+}
+.btn-03{
+    margin-left: 190px;
+    margin-top: -24px;
+}
 /* .uber-chg{
     margin-left: -120px;
 } */
