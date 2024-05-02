@@ -21,6 +21,12 @@
     .sub-zero{
         font-size: 10px;
     }
+    .footer-menu ul li a{
+        font-size: 10px;
+    }
+    .footer-menu p{
+        font-size: 10px;
+    }
     
 }
 @media only screen and (min-width: 430px) {
