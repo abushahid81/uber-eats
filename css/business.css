@@ -1,0 +1,52 @@
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url('https://ec6cqqrt7pb.exactdn.com/wp-content/uploads/2019/02/Uber-Eats-Image-8.jpg?strip=all&lossy=1&ssl=1');
+    background-size: cover;
+    height: 100vh;
+    width: 100wh;
+}  
+.btn-prime{
+    margin-right: 48px;
+}
+.btn-01{
+    margin-right: 24px;
+    margin-bottom: -26px;
+}
+.btn-02{
+    margin-right: 26px;
+    margin-bottom: -25px;
+}
+.btn-03{
+    margin-left: 190px;
+    margin-top: -24px;
+}
+.btn-data{
+    display: inline-flex;
+    margin-right: 5px;
+}
+.header-contant{
+    margin-right: -400px;
+    color: whitesmoke;
+}
+
+.header-contant .g9{
+    font-size: 7vmin;
+    margin-left: 100px;
+}
+.g10{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.g7{
+    margin-left: 150px;
+}
+.g8{
+    margin-left: 180px; 
+}
+.g2{
+    margin-top: 250px;
+    margin-left: 150px;
+}
